@@ -1,0 +1,158 @@
+.weather {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(155deg, #0521f2a5, #94f39f); 
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+
+.search-bar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+  color: aquamarine;
+}
+
+.weather-icon {
+   width: 250px;
+   margin: 30px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.status {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  margin-top: 12px;
+}
+
+.feelLike {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 12px;
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+  
+}
+
+.weather-data {
+   width: 100%;
+   margin-top: 40px;
+   color: #fff;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.weather-data .col {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   font-size: 30px;
+   text-align: center;
+   background: rgb(13, 60, 146);
+   padding: 10px;
+   border-radius: 20px;
+   width: 12%;
+   height: 200px;
+   justify-content: center;
+   
+}
+.weather-data .col span {
+   display: block;
+   font-size: 16px;
+}
+   .weather-data .col img {
+   width: 60px;
+   margin-top: 10px;
+}
+
+.header {
+  display: flex;
+  align-items:flex-end;
+justify-content: space-between;
+}
+
+.header-2 {
+  display: flex;
+  flex-direction: column;
+}
+.header-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  gap: 40px;
+}
+.weather-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+}
+
+.weather-info div {
+  margin: 20px;
+}
+
+.vl {
+  border-left: 2px solid white;
+  height: 300px;
+}
+
+p {
+ align-items: center;
+  font-size: 24px;
+}
+
+.today-weather {
+  color: white;
+}
+
+.weather-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-zone {
+  color: white;
+}
+
+.temp-info {
+  text-align: center;
+}
+
+.info {
+  font-size: 30px;
+  font-weight: bold;
+}
