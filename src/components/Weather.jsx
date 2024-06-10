@@ -45,9 +45,6 @@ const Weather = () => {
       const data = await response.json();
       const icon = allIcons[data.weather[0].icon] || clear_icon;
       console.log(data);
-
-
-
       setWeatherData({
         humidity: data.main.humidity,
         humidity: data.main.humidity,
@@ -128,7 +125,7 @@ const Weather = () => {
           <p className="location">{weatherData.location}, {weatherData.country}</p> 
         </div>
         <div className="search-bar">
-          <input ref={inputRef} type="text" placeholder="Search" />
+          <input ref={inputRef} type="text" placeholder="Search City Name" />
           <img
             src={search_icon}
             alt=""
@@ -199,56 +196,56 @@ const Weather = () => {
       <div className="weather-data">
       <div className="col">
           <div>
-          <p>{dateFormat(forecast.time1, "HH:00")}</p>
+          <p>{moment(forecast.time1).format("HH:mm")}</p>
           <img src={forecast.icon1} alt="" />
           <p>{forecast.temp1}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time2, "HH:00")}</p>
+          <p>{moment(forecast.time2).format("HH:mm")}</p>
           <img src={forecast.icon2} alt="" />
             <p>{forecast.temp2}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time3, "HH:00")}</p>
+          <p>{moment(forecast.time3).format("HH:mm")}</p>
           <img src={forecast.icon3} alt="" />
             <p>{forecast.temp3}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time4, "HH:00")}</p>
+          <p>{moment(forecast.time4).format("HH:mm")}</p>
           <img src={forecast.icon4} alt="" />
             <p>{forecast.temp4}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time5, "HH:00")}</p>
+          <p>{moment(forecast.time5).format("HH:mm")}</p>
           <img src={forecast.icon5} alt="" />
             <p>{forecast.temp5}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time6, "HH:00")}</p>
+          <p>{moment(forecast.time6).format("HH:mm")}</p>
           <img src={forecast.icon6} alt="" />
             <p>{forecast.temp6}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time7, "HH:00")}</p>
+          <p>{moment(forecast.time7).format("HH:mm")}</p>
           <img src={forecast.icon7} alt="" />
             <p>{forecast.temp7}°c</p>
           </div>
         </div>
         <div className="col">
           <div>
-          <p>{dateFormat(forecast.time8, "HH:00")}</p>
+          <p>{moment(forecast.time8).format("HH:mm")}</p>
           <img src={forecast.icon8} alt="" />
             <p>{forecast.temp8}°c</p>
           </div>
